@@ -1,0 +1,5 @@
+TX:
+sudo ./dragonradio /python/ecet680-radio.py --auto-soft-tx-gain 20 -v -G 20 -R 2 -d -b 1e6 -n 2 -i 1 --rx-antenna TX/RX -f 1.311e9 --lifo --verbose-packet-trace --slot-size 0.05 --guard-size 0.005 
+
+RX:
+sudo ./dragonradio /python/ecet680-radio.py --auto-soft-tx-gain 20 -v -G 20 -R 2 -d -b 1e6 -n 2 -i 2 --rx-antenna TX/RX -f 1.311e9 --lifo --verbose-packet-trace --slot-size 0.05 --guard-size 0.005 -l logs --log-iq
